@@ -29,9 +29,9 @@ You'll find:
 
 ## 🤝 Connect With Me
 
-[![Email](https://img.shields.io/badge/Email-kavix@yahoo.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kavix@yahoo.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-kavix-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kavix)
-[![Telegram](https://img.shields.io/badge/Telegram-@kavix-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/kavix)
+[![Email](https://img.shields.io/badge/Email-kavix@yahoo.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kavindusachinthe@outlook.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-kavix-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kavindus)
+[![Telegram](https://img.shields.io/badge/Telegram-@kavix-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/kavindus0)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--6813--3099-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0002-6813-3099)
 
 ---
