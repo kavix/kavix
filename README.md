@@ -64,7 +64,7 @@
 
 </details>
 
-#### Developer Platforms & Tooling
+#### Developer Platforms & IDP
 
 <details>
 <summary><strong><a href="https://github.com/guidewire-oss/teams360">guidewire-oss/teams360</a></strong></summary>
@@ -117,7 +117,7 @@
 
 </details>
 
-#### Identity, Access & Security
+#### Identity, Access Management & Security
 
 <details>
 <summary><strong><a href="https://github.com/Hushield/hushield">Hushield/hushield</a></strong></summary>
@@ -257,123 +257,6 @@
 #### Other Open Source Contributions
 
 <details>
-<summary><strong><a href="https://github.com/BlackBossX/BusTicketGeneratingSystem">BlackBossX/BusTicketGeneratingSystem</a></strong></summary>
-
-- [editByKavindus](https://github.com/BlackBossX/BusTicketGeneratingSystem/pull/6)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/BlackBossX/elektrum-backend">BlackBossX/elektrum-backend</a></strong></summary>
-
-- [CD](https://github.com/BlackBossX/elektrum-backend/pull/6)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/Exp-Intro-to-GitHub-Flow-Cohort-2/series-intro-to-github-flow-kavindus0">Exp-Intro-to-GitHub-Flow-Cohort-2/series-intro-to-github-flow-kavindus0</a></strong></summary>
-
-- [My first branch](https://github.com/Exp-Intro-to-GitHub-Flow-Cohort-2/series-intro-to-github-flow-kavindus0/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/ImKavinduSandaruwan/PyToolbox">ImKavinduSandaruwan/PyToolbox</a></strong></summary>
-
-- [add dark/light mode toggle with enhanced styling](https://github.com/ImKavinduSandaruwan/PyToolbox/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/.github">KODEGAS/.github</a></strong></summary>
-
-- [Create README.md](https://github.com/KODEGAS/.github/pull/2)
-- [Create README.md](https://github.com/KODEGAS/.github/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/CareerCoachX">KODEGAS/CareerCoachX</a></strong></summary>
-
-- [Aug 22 testing](https://github.com/KODEGAS/CareerCoachX/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/KODEGAS-PADDY-API">KODEGAS/KODEGAS-PADDY-API</a></strong></summary>
-
-- [[WIP] forcely set production url from 'https://kodegas-paddy-api.centralindia.cloudapp.azure.com' to 'http://kodegas-paddy-api.centralindia.cloudapp.azure.com](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/20)
-- [[WIP] set production url from 'https://kodegas-paddy-api.centralindia.cloudapp.azure.com' to 'http://kodegas-paddy-api.centralindia.cloudapp.azure.com'](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/19)
-- [Aug17](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/18)
-- [Add favicon and improve medicine CRUD UI/logic](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/17)
-- [Allow all origins in CORS configuration](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/16)
-- [Refactor API key header handling in auth.py](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/15)
-- [Update API base URLs to production server](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/14)
-- [Reset file pointer before image processing](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/13)
-- [Update CORS origins and prediction logic](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/12)
-- [Create docker-image.yml](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/11)
-- [Main meka sira main](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/10)
-- [Main meka sira main](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/9)
-- [Update auth.py](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/8)
-- [Update root endpoint and CORS origins](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/7)
-- [Add GitHub Actions deploy workflow and improve Dockerfile](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/6)
-- [Create deploy.yml](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/5)
-- [Kelauna eka](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/4)
-- [Update openapi.json](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/3)
-- [Update requirements.txt](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/2)
-- [Update main.py](https://github.com/KODEGAS/KODEGAS-PADDY-API/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/Medusa-2.0">KODEGAS/Medusa-2.0</a></strong></summary>
-
-- [fix: Fix Docker and workflow issues for successful deployment](https://github.com/KODEGAS/Medusa-2.0/pull/26)
-- [feat: Add backend deployment setup with Google Cloud and GHCR](https://github.com/KODEGAS/Medusa-2.0/pull/25)
-- [Fix GitHub CI/CD: Resolve dependency conflicts, security vulnerabilities, and workflow issues](https://github.com/KODEGAS/Medusa-2.0/pull/23)
-- [Fix GitHub Actions workflow YAML formatting issues](https://github.com/KODEGAS/Medusa-2.0/pull/22)
-- [New brach](https://github.com/KODEGAS/Medusa-2.0/pull/9)
-- [gh act](https://github.com/KODEGAS/Medusa-2.0/pull/8)
-- [Reg moved](https://github.com/KODEGAS/Medusa-2.0/pull/7)
-- [Reg moved](https://github.com/KODEGAS/Medusa-2.0/pull/6)
-- [ci cd](https://github.com/KODEGAS/Medusa-2.0/pull/5)
-- [gh ACT](https://github.com/KODEGAS/Medusa-2.0/pull/4)
-- [static texts updated](https://github.com/KODEGAS/Medusa-2.0/pull/3)
-- [/register moved](https://github.com/KODEGAS/Medusa-2.0/pull/2)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/vGurad_main">KODEGAS/vGurad_main</a></strong></summary>
-
-- [Fix favicon implementation: Add missing favicon files and manifest.json](https://github.com/KODEGAS/vGurad_main/pull/19)
-- [Fix GitHub Actions CI workflow failures - Node.js compatibility and dependency conflicts](https://github.com/KODEGAS/vGurad_main/pull/18)
-- [Fix GitHub Actions CI workflow for monorepo structure and dependency conflicts](https://github.com/KODEGAS/vGurad_main/pull/17)
-- [Update crop analysis API endpoint from HTTP to HTTPS](https://github.com/KODEGAS/vGurad_main/pull/16)
-- [Document predict endpoints base URLs and configuration](https://github.com/KODEGAS/vGurad_main/pull/14)
-- [Document and centralize API base URL configuration](https://github.com/KODEGAS/vGurad_main/pull/13)
-- [Add i18n support to Admin and MarketPrices pages](https://github.com/KODEGAS/vGurad_main/pull/12)
-- [Enhance SVG icon styling for priority medicine](https://github.com/KODEGAS/vGurad_main/pull/11)
-- [Update .gitignore and frontend stats, fix formatting](https://github.com/KODEGAS/vGurad_main/pull/10)
-- [Update .gitignore](https://github.com/KODEGAS/vGurad_main/pull/9)
-- [Create node.js.yml](https://github.com/KODEGAS/vGurad_main/pull/5)
-- [Update README.md](https://github.com/KODEGAS/vGurad_main/pull/4)
-- [Create README.md](https://github.com/KODEGAS/vGurad_main/pull/3)
-- [Delete .github/workflows/deno.yml](https://github.com/KODEGAS/vGurad_main/pull/2)
-- [Add automated Vercel deployment workflow with GitHub Actions](https://github.com/KODEGAS/vGurad_main/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/KODEGAS/website">KODEGAS/website</a></strong></summary>
-
-- [Fix GitHub Actions: Add complete CI/CD pipeline with Firebase deployment](https://github.com/KODEGAS/website/pull/3)
-- [Optimize website for minimal load time and comprehensive SEO - 68% performance improvement](https://github.com/KODEGAS/website/pull/2)
-- [Implement comprehensive SEO optimization for KODEGAS website](https://github.com/KODEGAS/website/pull/1)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/LDFLK/OpenGIN">LDFLK/OpenGIN</a></strong></summary>
 
 - [fix: make startup tests and database cleanup conditional](https://github.com/LDFLK/OpenGIN/pull/496)
@@ -385,20 +268,6 @@
 
 - [fix: add fallback for missing minister names in MinistryCard](https://github.com/LDFLK/openginxplore/pull/208)
 - [GH-160: fix: add a way to exit the search results view](https://github.com/LDFLK/openginxplore/pull/207)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/Maleesha101/ArenaXX">Maleesha101/ArenaXX</a></strong></summary>
-
-- [DataBase Connected and Login UI Created](https://github.com/Maleesha101/ArenaXX/pull/1)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/Rusiru-Randika/Modified_Background_Remove_V2">Rusiru-Randika/Modified_Background_Remove_V2</a></strong></summary>
-
-- [Use that Public Link](https://github.com/Rusiru-Randika/Modified_Background_Remove_V2/pull/1)
 
 </details>
 
@@ -419,13 +288,6 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/gihan001/RESTAUTANTMNG-V1">gihan001/RESTAUTANTMNG-V1</a></strong></summary>
-
-- [kavindu](https://github.com/gihan001/RESTAUTANTMNG-V1/pull/1)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/lingdojo/kana-dojo">lingdojo/kana-dojo</a></strong></summary>
 
 - [content: add new japan fact](https://github.com/lingdojo/kana-dojo/pull/20437)
@@ -434,23 +296,9 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/maneeshaYasinth/robo-battle-page">maneeshaYasinth/robo-battle-page</a></strong></summary>
-
-- [Footer Created (Not added WA No. etc)](https://github.com/maneeshaYasinth/robo-battle-page/pull/2)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
 - [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/sthmu/RESTAUTANTMNG-V1">sthmu/RESTAUTANTMNG-V1</a></strong></summary>
-
-- [Kavindu](https://github.com/sthmu/RESTAUTANTMNG-V1/pull/2)
 
 </details>
 
