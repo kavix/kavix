@@ -119,6 +119,13 @@
 
 </details>
 
+<details>
+<summary><strong><a href="https://github.com/Yeachan-Heo/oh-my-claudecode">Yeachan-Heo/oh-my-claudecode</a></strong></summary>
+
+- [fix(hooks): eliminate DELEGATION NOTICE false-positives for scratchpad writes and log redirects (#3910)](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/3911)
+
+</details>
+
 #### Identity, Access Management & Security
 
 <details>
