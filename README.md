@@ -1,9 +1,8 @@
-# Hi, I'm Kavindu 👋
 
-> Systems, Cloud-Native, and Platform Engineer passionate about distributed systems, Kubernetes schedulers, developer tooling, and identity security.
-
+<sub>*Prior work as [kavindus0](https://github.com/kavindus0) is archived.*</sub>
+---
 <details>
-<summary><h3>🌐 Open Source Contributions</h3></summary>
+<summary><h3>Open Source Contributions</h3></summary>
 
 <br>
 
@@ -306,7 +305,3 @@
 </details>
 
 </details>
-
----
-
-<sub>*Prior work as [kavindus0](https://github.com/kavindus0) is archived.*</sub>
