@@ -2,7 +2,10 @@
 
 > Systems, Cloud-Native, and Platform Engineer passionate about distributed systems, Kubernetes schedulers, developer tooling, and identity security.
 
-### 🌐 Open Source Contributions
+<details>
+<summary><h3>🌐 Open Source Contributions</h3></summary>
+
+<br>
 
 #### Cloud Native & Kubernetes
 
@@ -299,6 +302,8 @@
 <summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
 - [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
+
+</details>
 
 </details>
 
