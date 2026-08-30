@@ -1,4 +1,4 @@
-# Hi there, I'm Kavindu 👋
+# Hi, I'm Kavindu 👋
 
 > Systems, Cloud-Native, and Platform Engineer passionate about distributed systems, Kubernetes schedulers, developer tooling, and identity security.
 
