@@ -1,4 +1,6 @@
 
+**Kubernetes Organization Member** ([`kubernetes-sigs`](https://github.com/kubernetes-sigs))
+
 <sub>*Prior work as [kavindus0](https://github.com/kavindus0) is archived.*</sub>
 ---
 <details>
@@ -40,6 +42,9 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
+- [Remove EquateEmpty from RayService TestPodSets comparison](https://github.com/kubernetes-sigs/kueue/pull/15090)
+- [TAS: add feature gate for strict prebuilt workload equivalence (#15009)](https://github.com/kubernetes-sigs/kueue/pull/15049)
+- [Retain topology domain affinity during preemption wait](https://github.com/kubernetes-sigs/kueue/pull/15036)
 - [[release-0.19] WAS: Discard logs in simulator context to avoid race during teardown](https://github.com/kubernetes-sigs/kueue/pull/14913)
 - [queue: use cmp.Or for requeueWorkload nil fallback in manager_test.go](https://github.com/kubernetes-sigs/kueue/pull/14912)
 - [WAS: Discard logs in simulator context to avoid race during teardown](https://github.com/kubernetes-sigs/kueue/pull/14908)
@@ -60,6 +65,13 @@
 </details>
 
 <details>
+<summary><strong><a href="https://github.com/kubernetes/kubernetes">kubernetes/kubernetes</a></strong></summary>
+
+- [kubelet: improve init container startup status visibility](https://github.com/kubernetes/kubernetes/pull/141693)
+
+</details>
+
+<details>
 <summary><strong><a href="https://github.com/ray-project/kuberay">ray-project/kuberay</a></strong></summary>
 
 - [ray-operator: remove ineffective clearing of WorkersToDelete](https://github.com/ray-project/kuberay/pull/5209)
@@ -69,11 +81,11 @@
 #### Developer Platforms & IDP
 
 <details>
-<summary><strong><a href="https://github.com/guidewire-oss/teams360">guidewire-oss/teams360</a></strong></summary>
+<summary><strong><a href="https://github.com/guidewire-oss/teamhealthcheck">guidewire-oss/teamhealthcheck</a></strong></summary>
 
-- [Fix/branding rename pr 137](https://github.com/guidewire-oss/teams360/pull/141)
-- [Kavix patch 1](https://github.com/guidewire-oss/teams360/pull/138)
-- [docs(branding): rename Team360 to Team Health Check](https://github.com/guidewire-oss/teams360/pull/137)
+- [Fix/branding rename pr 137](https://github.com/guidewire-oss/teamhealthcheck/pull/141)
+- [Kavix patch 1](https://github.com/guidewire-oss/teamhealthcheck/pull/138)
+- [docs(branding): rename Team360 to Team Health Check](https://github.com/guidewire-oss/teamhealthcheck/pull/137)
 
 </details>
 
@@ -89,6 +101,7 @@
 <details>
 <summary><strong><a href="https://github.com/openchoreo/openchoreo">openchoreo/openchoreo</a></strong></summary>
 
+- [fix: exclude agent connections from selection after GOAWAY is sent](https://github.com/openchoreo/openchoreo/pull/4594)
 - [feat(api): support per-trigger cronjob arguments](https://github.com/openchoreo/openchoreo/pull/4577)
 - [fix(controller): clean up orphaned ProjectRelease snapshots on Project deletion](https://github.com/openchoreo/openchoreo/pull/4406)
 - [fix(controller): add container ports so workloads can be targeted by name](https://github.com/openchoreo/openchoreo/pull/4382)
@@ -129,16 +142,16 @@
 #### Identity, Access Management & Security
 
 <details>
-<summary><strong><a href="https://github.com/Hushield/hushield">Hushield/hushield</a></strong></summary>
+<summary><strong><a href="https://github.com/asgardeo/javascript">asgardeo/javascript</a></strong></summary>
 
-- [ci added](https://github.com/Hushield/hushield/pull/12)
+- [refactor: remove __legacy__ folders from packages](https://github.com/asgardeo/javascript/pull/539)
 
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/asgardeo/javascript">asgardeo/javascript</a></strong></summary>
+<summary><strong><a href="https://github.com/Hushield/hushield">Hushield/hushield</a></strong></summary>
 
-- [refactor: remove __legacy__ folders from packages](https://github.com/asgardeo/javascript/pull/539)
+- [ci added](https://github.com/Hushield/hushield/pull/12)
 
 </details>
 
@@ -240,14 +253,6 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/facebookresearch/projectaria_tools">facebookresearch/projectaria_tools</a></strong></summary>
-
-- [Fix sample data paths to use gen1/mps_sample in Gen1 samples](https://github.com/facebookresearch/projectaria_tools/pull/396)
-- [Fix apt install command for ADB in Linux USB driver docs](https://github.com/facebookresearch/projectaria_tools/pull/395)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/modular/modular">modular/modular</a></strong></summary>
 
 - [[Docs] Add license specification and README for max Mojo package (#6944)](https://github.com/modular/modular/pull/6950)
@@ -263,7 +268,24 @@
 
 </details>
 
+#### AI, Vision & Research
+
+<details>
+<summary><strong><a href="https://github.com/facebookresearch/projectaria_tools">facebookresearch/projectaria_tools</a></strong></summary>
+
+- [Fix sample data paths to use gen1/mps_sample in Gen1 samples](https://github.com/facebookresearch/projectaria_tools/pull/396)
+- [Fix apt install command for ADB in Linux USB driver docs](https://github.com/facebookresearch/projectaria_tools/pull/395)
+
+</details>
+
 #### Other Open Source Contributions
+
+<details>
+<summary><strong><a href="https://github.com/clencyc/LiveEdit">clencyc/LiveEdit</a></strong></summary>
+
+- [docs: add contributing guidelines and github templates](https://github.com/clencyc/LiveEdit/pull/20)
+
+</details>
 
 <details>
 <summary><strong><a href="https://github.com/LDFLK/OpenGIN">LDFLK/OpenGIN</a></strong></summary>
@@ -281,22 +303,6 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/Termix-SSH/Termix">Termix-SSH/Termix</a></strong></summary>
-
-- [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/981)
-- [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/980)
-- [Fix SSH port connection bug](https://github.com/Termix-SSH/Termix/pull/975)
-
-</details>
-
-<details>
-<summary><strong><a href="https://github.com/clencyc/LiveEdit">clencyc/LiveEdit</a></strong></summary>
-
-- [docs: add contributing guidelines and github templates](https://github.com/clencyc/LiveEdit/pull/20)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/lingdojo/kana-dojo">lingdojo/kana-dojo</a></strong></summary>
 
 - [content: add new japan fact](https://github.com/lingdojo/kana-dojo/pull/20437)
@@ -308,6 +314,15 @@
 <summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
 - [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/Termix-SSH/Termix">Termix-SSH/Termix</a></strong></summary>
+
+- [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/981)
+- [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/980)
+- [Fix SSH port connection bug](https://github.com/Termix-SSH/Termix/pull/975)
 
 </details>
 
