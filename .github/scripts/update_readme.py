@@ -186,7 +186,7 @@ def generate_markdown(prs: list, is_k8s_member: bool) -> str:
     lines = []
     lines.append("")
     if is_k8s_member:
-        lines.append("**Kubernetes Organization Member** ([`kubernetes-sigs`](https://github.com/kubernetes-sigs))")
+        lines.append("<img src=\"https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg\" width=\"18\" height=\"18\" valign=\"middle\" alt=\"Kubernetes\" /> **Kubernetes Organization Member** ([`kubernetes-sigs`](https://github.com/kubernetes-sigs))")
         lines.append("")
     lines.append(f"<sub>*Prior work as [{ARCHIVED_USER}](https://github.com/{ARCHIVED_USER}) is archived.*</sub>")
     lines.append("---")
