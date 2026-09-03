@@ -1,5 +1,5 @@
 
-<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg" width="18" height="18" valign="middle" alt="Kubernetes" /> **Kubernetes Organization Member** ([`kubernetes-sigs`](https://github.com/kubernetes-sigs))
+<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg" width="18" height="18" valign="middle" alt="Kubernetes" /> **Love contributing to Open Source** • Kubernetes Org Member ([`kubernetes-sigs`](https://github.com/kubernetes-sigs))
 
 <sub>*Prior work as [kavindus0](https://github.com/kavindus0) is archived.*</sub>
 ---
