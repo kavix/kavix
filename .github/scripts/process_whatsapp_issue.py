@@ -93,6 +93,9 @@ def send_whatsapp_reply(phone_number_id: str, access_token: str, to: str, messag
     try:
         with urllib.request.urlopen(req) as resp:
             print(f"WhatsApp Cloud API reply sent: {resp.status}")
+    except urllib.error.HTTPError as e:
+        error_details = e.read().decode("utf-8")
+        print(f"Failed to send WhatsApp Cloud API reply: HTTP {e.code}: {error_details}")
     except Exception as e:
         print(f"Failed to send WhatsApp Cloud API reply: {e}")
 
