@@ -42,6 +42,10 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
+- [Fix lost-wakeup race in Manager.Heads and missed broadcast for unregistered workloads](https://github.com/kubernetes-sigs/kueue/pull/15200)
+- [queue: use cmp.Or for requeueWorkload nil fallback in TestRequeueWorkload [0.18]](https://github.com/kubernetes-sigs/kueue/pull/15198)
+- [queue: use cmp.Or for requeueWorkload nil fallback in TestRequeueWorkload [0.19]](https://github.com/kubernetes-sigs/kueue/pull/15196)
+- [queue: use cmp.Or for requeueWorkload nil fallback in manager_test.go](https://github.com/kubernetes-sigs/kueue/pull/15168)
 - [Remove EquateEmpty from RayService TestPodSets comparison](https://github.com/kubernetes-sigs/kueue/pull/15090)
 - [TAS: add feature gate for strict prebuilt workload equivalence (#15009)](https://github.com/kubernetes-sigs/kueue/pull/15049)
 - [Retain topology domain affinity during preemption wait](https://github.com/kubernetes-sigs/kueue/pull/15036)
