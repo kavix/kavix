@@ -1,13 +1,3 @@
-/**
- * Cloudflare Worker: WhatsApp Cloud API to GitHub Action Relay
- * 
- * Environment Variables required in Cloudflare Worker dashboard:
- * - WHATSAPP_VERIFY_TOKEN: Any secret string you choose for webhook verification
- * - GITHUB_PAT: GitHub Personal Access Token (classic with repo scope, or fine-grained with Actions:write)
- * - GITHUB_REPO: "kavix/kavix"
- * - ALLOWED_PHONES: (Optional) Comma-separated list of allowed phone numbers (e.g. "1234567890,9876543210")
- */
-
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -18,10 +8,15 @@ export default {
       const token = url.searchParams.get("hub.verify_token");
       const challenge = url.searchParams.get("hub.challenge");
 
-      if (mode === "subscribe" && token === env.WHATSAPP_VERIFY_TOKEN) {
-        return new Response(challenge, { status: 200 });
+      const expectedToken = (env.WHATSAPP_VERIFY_TOKEN || "kavix_secret_123").trim();
+
+      if (mode === "subscribe" && token === expectedToken) {
+        return new Response(challenge, {
+          status: 200,
+          headers: { "Content-Type": "text/plain" }
+        });
       }
-      return new Response("Forbidden", { status: 403 });
+      return new Response(`Forbidden: received token '${token}'`, { status: 403 });
     }
 
     // 2. Incoming WhatsApp Message (POST request)
@@ -29,7 +24,6 @@ export default {
       try {
         const body = await request.json();
 
-        // Extract message details from WhatsApp Cloud API payload
         const entry = body.entry?.[0];
         const change = entry?.changes?.[0];
         const value = change?.value;
@@ -39,15 +33,20 @@ export default {
           return new Response("Not a text message or status update", { status: 200 });
         }
 
-        const sender = message.from; // e.g. "94771234567"
+        const sender = message.from;
         const messageText = message.text?.body;
 
-        // Security check: Only allow your authorized phone number(s)
-        if (env.ALLOWED_PHONES) {
-          const allowed = env.ALLOWED_PHONES.split(",").map(p => p.trim());
-          if (!allowed.includes(sender)) {
-            console.log(`Ignored message from unauthorized sender: ${sender}`);
-            return new Response("Unauthorized sender", { status: 200 });
+        // Security check: match phone number flexibly (handles +, spaces, country code)
+        if (env.ALLOWED_PHONES && env.ALLOWED_PHONES.trim() !== "") {
+          const cleanSender = String(sender).replace(/\D/g, "");
+          const allowedList = env.ALLOWED_PHONES.split(",")
+            .map(p => p.replace(/\D/g, "").trim())
+            .filter(Boolean);
+
+          const isAllowed = allowedList.some(p => cleanSender.endsWith(p) || p.endsWith(cleanSender));
+          if (!isAllowed) {
+            console.log(`Blocked unauthorized sender: ${sender}`);
+            return new Response(`Unauthorized sender: ${sender}`, { status: 200 });
           }
         }
 
@@ -73,13 +72,13 @@ export default {
         if (!ghResponse.ok) {
           const errText = await ghResponse.text();
           console.error(`GitHub dispatch failed: ${ghResponse.status} ${errText}`);
-          return new Response("GitHub dispatch error", { status: 500 });
+          return new Response(`GitHub dispatch error: ${ghResponse.status} ${errText}`, { status: 500 });
         }
 
         return new Response("Dispatched to GitHub Action", { status: 200 });
       } catch (err) {
         console.error("Error processing webhook:", err);
-        return new Response("Internal Server Error", { status: 500 });
+        return new Response(`Internal Server Error: ${err.message}`, { status: 500 });
       }
     }
 
