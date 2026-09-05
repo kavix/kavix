@@ -1,0 +1,43 @@
+name: WhatsApp to GitHub Issue Agent
+
+on:
+  repository_dispatch:
+    types: [whatsapp_issue]
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Raw WhatsApp message content to triage'
+        required: true
+        default: 'Found a bug on mobile screen: the navigation menu does not expand when clicked.'
+      sender:
+        description: 'Sender Phone Number or Name'
+        required: false
+        default: '+1234567890'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Process WhatsApp Message & Create Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          WHATSAPP_MESSAGE: ${{ github.event.client_payload.message || inputs.message }}
+          WHATSAPP_SENDER: ${{ github.event.client_payload.sender || inputs.sender }}
+          WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+          WHATSAPP_ACCESS_TOKEN: ${{ secrets.WHATSAPP_ACCESS_TOKEN }}
+        run: |
+          python3 .github/scripts/process_whatsapp_issue.py
