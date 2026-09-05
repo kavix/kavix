@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI Agent to transform raw WhatsApp messages into formatted GitHub Issues.
-Supports Google Gemini (default, free API) or OpenAI.
+Supports Google Gemini, OpenAI, and fallback to direct issue creation.
 """
 
 import json
@@ -9,27 +9,37 @@ import os
 import sys
 import subprocess
 import urllib.request
+import urllib.parse
 import urllib.error
 
 
 def call_gemini(prompt: str, api_key: str) -> dict:
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "response_mime_type": "application/json",
-            "temperature": 0.2,
-        },
-    }
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(req) as resp:
-        result = json.loads(resp.read().decode("utf-8"))
-        text = result["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text)
+    models = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash-latest", "gemini-1.5-flash"]
+    last_error = None
+    for model in models:
+        for version in ["v1beta", "v1"]:
+            url = f"https://generativelanguage.googleapis.com/{version}/models/{model}:generateContent?key={api_key}"
+            payload = {
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "response_mime_type": "application/json",
+                    "temperature": 0.2,
+                },
+            }
+            try:
+                req = urllib.request.Request(
+                    url,
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json"},
+                )
+                with urllib.request.urlopen(req) as resp:
+                    result = json.loads(resp.read().decode("utf-8"))
+                    text = result["candidates"][0]["content"]["parts"][0]["text"]
+                    return json.loads(text)
+            except Exception as e:
+                last_error = e
+                continue
+    raise RuntimeError(f"All Gemini models failed. Last error: {last_error}")
 
 
 def call_openai(prompt: str, api_key: str) -> dict:
@@ -61,13 +71,14 @@ def call_openai(prompt: str, api_key: str) -> dict:
 
 
 def send_whatsapp_reply(phone_number_id: str, access_token: str, to: str, message: str):
-    """Optionally send a confirmation message back to WhatsApp."""
+    """Send confirmation message back via Meta WhatsApp Cloud API."""
     if not (phone_number_id and access_token and to):
         return
+    clean_to = to.lstrip("+").strip()
     url = f"https://graph.facebook.com/v20.0/{phone_number_id}/messages"
     payload = {
         "messaging_product": "whatsapp",
-        "to": to,
+        "to": clean_to,
         "type": "text",
         "text": {"body": message},
     }
@@ -81,9 +92,24 @@ def send_whatsapp_reply(phone_number_id: str, access_token: str, to: str, messag
     )
     try:
         with urllib.request.urlopen(req) as resp:
-            print(f"WhatsApp reply sent successfully: {resp.status}")
+            print(f"WhatsApp Cloud API reply sent: {resp.status}")
     except Exception as e:
-        print(f"Failed to send WhatsApp reply: {e}")
+        print(f"Failed to send WhatsApp Cloud API reply: {e}")
+
+
+def send_callmebot_reply(phone: str, apikey: str, message: str):
+    """Send confirmation message back via CallMeBot."""
+    if not (phone and apikey):
+        return
+    clean_phone = phone.lstrip("+").strip()
+    encoded = urllib.parse.quote(message)
+    url = f"https://api.callmebot.com/whatsapp.php?phone={clean_phone}&text={encoded}&apikey={apikey}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "GitHub-Action"})
+        with urllib.request.urlopen(req) as resp:
+            print(f"CallMeBot reply sent: {resp.status}")
+    except Exception as e:
+        print(f"CallMeBot reply failed: {e}")
 
 
 def main():
@@ -91,6 +117,7 @@ def main():
     sender = os.environ.get("WHATSAPP_SENDER", "WhatsApp User")
     gemini_key = os.environ.get("GEMINI_API_KEY")
     openai_key = os.environ.get("OPENAI_API_KEY")
+    callmebot_key = os.environ.get("CALLMEBOT_API_KEY")
     repo = os.environ.get("GITHUB_REPOSITORY", "kavix/kavix")
 
     if not raw_message:
@@ -113,19 +140,26 @@ Respond ONLY with valid JSON matching this schema:
 }}
 """
 
-    print("Analyzing message with AI...")
     parsed_issue = None
 
     if gemini_key:
-        print("Using Google Gemini...")
-        parsed_issue = call_gemini(ai_prompt, gemini_key)
-    elif openai_key:
-        print("Using OpenAI...")
-        parsed_issue = call_openai(ai_prompt, openai_key)
-    else:
-        print("No AI key provided. Falling back to default formatting.")
+        print("Attempting AI parsing with Google Gemini...")
+        try:
+            parsed_issue = call_gemini(ai_prompt, gemini_key)
+        except Exception as e:
+            print(f"Gemini error: {e}. Falling back to default format.")
+
+    if not parsed_issue and openai_key:
+        print("Attempting AI parsing with OpenAI...")
+        try:
+            parsed_issue = call_openai(ai_prompt, openai_key)
+        except Exception as e:
+            print(f"OpenAI error: {e}. Falling back to default format.")
+
+    if not parsed_issue:
+        print("Using fallback issue formatting.")
         parsed_issue = {
-            "title": f"[WhatsApp] {raw_message[:60]}...",
+            "title": f"[WhatsApp] {raw_message[:60]}",
             "body": f"### WhatsApp Message\n\n{raw_message}\n\n**Sender:** `{sender}`",
             "labels": ["whatsapp"],
         }
@@ -153,8 +187,7 @@ Respond ONLY with valid JSON matching this schema:
     result = subprocess.run(cmd, capture_output=True, text=True)
 
     if result.returncode != 0:
-        # If label doesn't exist, retry without labels
-        print(f"Issue creation with labels encountered: {result.stderr}. Retrying without labels...")
+        print(f"Creating without labels due to: {result.stderr}")
         cmd_fallback = [
             "gh",
             "issue",
@@ -171,12 +204,16 @@ Respond ONLY with valid JSON matching this schema:
     issue_url = result.stdout.strip()
     print(f"Successfully created issue: {issue_url}")
 
-    # Optional: Send WhatsApp notification back
+    # Send WhatsApp notification back
+    reply_msg = f" Issue created in {repo}:\n{issue_url}\n\nTitle: {title}"
+
     phone_id = os.environ.get("WHATSAPP_PHONE_NUMBER_ID")
     wa_token = os.environ.get("WHATSAPP_ACCESS_TOKEN")
-    if phone_id and wa_token and sender and sender.isdigit():
-        reply_msg = f" Issue created in {repo}:\n{issue_url}\n\nTitle: {title}"
+    if phone_id and wa_token and sender:
         send_whatsapp_reply(phone_id, wa_token, sender, reply_msg)
+
+    if callmebot_key and sender:
+        send_callmebot_reply(sender, callmebot_key, reply_msg)
 
 
 if __name__ == "__main__":
