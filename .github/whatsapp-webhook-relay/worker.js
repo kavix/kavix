@@ -8,6 +8,14 @@ export default {
       const token = url.searchParams.get("hub.verify_token");
       const challenge = url.searchParams.get("hub.challenge");
 
+      // Friendly browser message when visiting the URL directly
+      if (!mode && !token) {
+        return new Response("WhatsApp to GitHub Issue Agent Relay is LIVE and Healthy!", {
+          status: 200,
+          headers: { "Content-Type": "text/plain" }
+        });
+      }
+
       const expectedToken = (env.WHATSAPP_VERIFY_TOKEN || "kavix_secret_123").trim();
 
       if (mode === "subscribe" && token === expectedToken) {
@@ -16,7 +24,7 @@ export default {
           headers: { "Content-Type": "text/plain" }
         });
       }
-      return new Response(`Forbidden: received token '${token}'`, { status: 403 });
+      return new Response(`Forbidden: invalid token`, { status: 403 });
     }
 
     // 2. Incoming WhatsApp Message (POST request)
@@ -36,7 +44,7 @@ export default {
         const sender = message.from;
         const messageText = message.text?.body;
 
-        // Security check: match phone number flexibly (handles +, spaces, country code)
+        // Security check: match phone number flexibly (handles +, spaces, 0)
         if (env.ALLOWED_PHONES && env.ALLOWED_PHONES.trim() !== "") {
           const cleanSender = String(sender).replace(/\D/g, "");
           const allowedList = env.ALLOWED_PHONES.split(",")
