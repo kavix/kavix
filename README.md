@@ -42,7 +42,7 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
-- [queue: check context cancellation before cond.Wait in Manager.Heads](https://github.com/kubernetes-sigs/kueue/pull/15238)
+- [test(scheduler): avoid scheduling against empty queues in TestLastSchedulingContext](https://github.com/kubernetes-sigs/kueue/pull/15238)
 - [queue: resolve ClusterQueue for unassigned or pre-admitted workloads in QueueAssociatedInadmissibleWorkloadsAfter](https://github.com/kubernetes-sigs/kueue/pull/15200)
 - [queue: use cmp.Or for requeueWorkload nil fallback in TestRequeueWorkload [0.18]](https://github.com/kubernetes-sigs/kueue/pull/15198)
 - [queue: use cmp.Or for requeueWorkload nil fallback in TestRequeueWorkload [0.19]](https://github.com/kubernetes-sigs/kueue/pull/15196)
