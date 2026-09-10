@@ -42,6 +42,8 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
+- [Add StatefulSet reconciler unit test for resize after scale-to-zero](https://github.com/kubernetes-sigs/kueue/pull/15319)
+- [Extend KEP-78 to document ReclaimablePods effect on TAS assignments](https://github.com/kubernetes-sigs/kueue/pull/15317)
 - [test(scheduler): avoid scheduling against empty queues in TestLastSchedulingContext](https://github.com/kubernetes-sigs/kueue/pull/15238)
 - [queue: resolve ClusterQueue for unassigned or pre-admitted workloads in QueueAssociatedInadmissibleWorkloadsAfter](https://github.com/kubernetes-sigs/kueue/pull/15200)
 - [queue: use cmp.Or for requeueWorkload nil fallback in TestRequeueWorkload [0.18]](https://github.com/kubernetes-sigs/kueue/pull/15198)
@@ -223,6 +225,7 @@
 <details>
 <summary><strong><a href="https://github.com/ballerina-platform/ballerina-lang">ballerina-platform/ballerina-lang</a></strong></summary>
 
+- [Fix lang.xml:createText for empty string](https://github.com/ballerina-platform/ballerina-lang/pull/44713)
 - [Fix error propagation in lax optional field access](https://github.com/ballerina-platform/ballerina-lang/pull/44693)
 - [Fix issue #22100: Improve error message for non-accessible object initialization](https://github.com/ballerina-platform/ballerina-lang/pull/44642)
 - [Add --silent option to 'bal run' command](https://github.com/ballerina-platform/ballerina-lang/pull/44627)
@@ -246,6 +249,7 @@
 <details>
 <summary><strong><a href="https://github.com/facebook/pyrefly">facebook/pyrefly</a></strong></summary>
 
+- [Fix false positive bad-override when overriding methods using bounded TypeVars](https://github.com/facebook/pyrefly/pull/4869)
 - [Report redundant-condition for class instances without __bool__ or __len__](https://github.com/facebook/pyrefly/pull/4673)
 - [Consider __all__.remove when determining explicit exports](https://github.com/facebook/pyrefly/pull/4638)
 - [Fix stack overflow during subscript inference on recursive type aliases](https://github.com/facebook/pyrefly/pull/4635)
