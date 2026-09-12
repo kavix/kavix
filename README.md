@@ -108,6 +108,7 @@
 <details>
 <summary><strong><a href="https://github.com/openchoreo/openchoreo">openchoreo/openchoreo</a></strong></summary>
 
+- [feat(api): register portal-assistant:invoke and add chart roles validation test (#4683)](https://github.com/openchoreo/openchoreo/pull/4722)
 - [fix: exclude agent connections from selection after GOAWAY is sent](https://github.com/openchoreo/openchoreo/pull/4594)
 - [feat(api): support per-trigger cronjob arguments](https://github.com/openchoreo/openchoreo/pull/4577)
 - [fix(controller): clean up orphaned ProjectRelease snapshots on Project deletion](https://github.com/openchoreo/openchoreo/pull/4406)
@@ -128,6 +129,7 @@
 <details>
 <summary><strong><a href="https://github.com/openchoreo/openchoreo.github.io">openchoreo/openchoreo.github.io</a></strong></summary>
 
+- [docs(authz): update available actions and default roles (#4683)](https://github.com/openchoreo/openchoreo.github.io/pull/857)
 - [docs: add migration note for default-httplistenerpolicy Helm ownership conflict](https://github.com/openchoreo/openchoreo.github.io/pull/751)
 
 </details>
@@ -323,6 +325,13 @@
 <summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
 - [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/siddhi-io/siddhi-plugin-vscode">siddhi-io/siddhi-plugin-vscode</a></strong></summary>
+
+- [fix: remediate remaining trivy-reported npm vulnerabilities (resolves #41)](https://github.com/siddhi-io/siddhi-plugin-vscode/pull/68)
 
 </details>
 
