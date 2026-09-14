@@ -85,6 +85,13 @@
 
 </details>
 
+<details>
+<summary><strong><a href="https://github.com/wso2/kubernetes-common">wso2/kubernetes-common</a></strong></summary>
+
+- [[Doc] Update Kubernetes Membership Scheme installation steps for EI 6.0.0+](https://github.com/wso2/kubernetes-common/pull/31)
+
+</details>
+
 #### Developer Platforms & IDP
 
 <details>
@@ -202,6 +209,7 @@
 <details>
 <summary><strong><a href="https://github.com/wso2/healthcare-accelerator">wso2/healthcare-accelerator</a></strong></summary>
 
+- [docs(consentEnforcePolicy): clarify JWT trust boundary in README (#48)](https://github.com/wso2/healthcare-accelerator/pull/54)
 - [Fixes #21: Apply HTML attribute encoding to user inputs in JSP pages](https://github.com/wso2/healthcare-accelerator/pull/47)
 
 </details>
@@ -341,6 +349,21 @@
 - [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/981)
 - [Fix shared snippet folder visibility](https://github.com/Termix-SSH/Termix/pull/980)
 - [Fix SSH port connection bug](https://github.com/Termix-SSH/Termix/pull/975)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/wso2/docs-is">wso2/docs-is</a></strong></summary>
+
+- [[Docs] Document invalidation_impl requirement for carbon-cache-sync-manager (#28436)](https://github.com/wso2/docs-is/pull/6333)
+- [Document Password Expired User Identification API and fix truncated tutorial Step 3](https://github.com/wso2/docs-is/pull/6332)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/wso2/fhir-server">wso2/fhir-server</a></strong></summary>
+
+- [fix(handler): reflect release version in capability statement software section](https://github.com/wso2/fhir-server/pull/56)
 
 </details>
 
