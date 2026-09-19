@@ -235,6 +235,7 @@
 <details>
 <summary><strong><a href="https://github.com/ballerina-platform/ballerina-lang">ballerina-platform/ballerina-lang</a></strong></summary>
 
+- [[2201.13.x] Synchronize transaction resource registration with completion and cleanup](https://github.com/ballerina-platform/ballerina-lang/pull/44743)
 - [Fix lang.xml:createText for empty string](https://github.com/ballerina-platform/ballerina-lang/pull/44713)
 - [Fix error propagation in lax optional field access](https://github.com/ballerina-platform/ballerina-lang/pull/44693)
 - [Fix issue #22100: Improve error message for non-accessible object initialization](https://github.com/ballerina-platform/ballerina-lang/pull/44642)
@@ -364,6 +365,14 @@
 <summary><strong><a href="https://github.com/wso2/fhir-server">wso2/fhir-server</a></strong></summary>
 
 - [fix(handler): reflect release version in capability statement software section](https://github.com/wso2/fhir-server/pull/56)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/wso2/wso2-cli">wso2/wso2-cli</a></strong></summary>
+
+- [ci(release): verify live Pages deployment to catch deduplicated catalog releases (#209)](https://github.com/wso2/wso2-cli/pull/214)
+- [fix(catalog): check shell compatibility range during module selection](https://github.com/wso2/wso2-cli/pull/213)
 
 </details>
 
