@@ -369,6 +369,20 @@
 </details>
 
 <details>
+<summary><strong><a href="https://github.com/wso2/open-healthcare-prebuilt-services">wso2/open-healthcare-prebuilt-services</a></strong></summary>
+
+- [Upgrade Ballerina distribution to 2201.13.4 and restore pinned package dependencies (#189)](https://github.com/wso2/open-healthcare-prebuilt-services/pull/190)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/wso2/reference-implementation-cms0057f">wso2/reference-implementation-cms0057f</a></strong></summary>
+
+- [Add server-side search and status filtering to getPdexDataRequests API (#271)](https://github.com/wso2/reference-implementation-cms0057f/pull/313)
+
+</details>
+
+<details>
 <summary><strong><a href="https://github.com/wso2/wso2-cli">wso2/wso2-cli</a></strong></summary>
 
 - [ci(release): verify live Pages deployment to catch deduplicated catalog releases (#209)](https://github.com/wso2/wso2-cli/pull/214)
