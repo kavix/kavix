@@ -42,6 +42,9 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
+- [tas: evaluate ExceedsShare without upward rounding](https://github.com/kubernetes-sigs/kueue/pull/15862)
+- [tas: default enforcement mode to Required in NewSpreadingSpec](https://github.com/kubernetes-sigs/kueue/pull/15860)
+- [docs: document PodSet group constraints for TAS topology spreading](https://github.com/kubernetes-sigs/kueue/pull/15859)
 - [Add StatefulSet reconciler unit test for resize after scale-to-zero](https://github.com/kubernetes-sigs/kueue/pull/15319)
 - [Extend KEP-78 to document ReclaimablePods effect on TAS assignments](https://github.com/kubernetes-sigs/kueue/pull/15317)
 - [test(scheduler): avoid scheduling against empty queues in TestLastSchedulingContext](https://github.com/kubernetes-sigs/kueue/pull/15238)
@@ -189,6 +192,13 @@
 - [Return specific error for attribute conflicts during user provisioning](https://github.com/thunder-id/thunderid/pull/3317)
 - [Use camelCase for declarative resource attributes](https://github.com/thunder-id/thunderid/pull/3304)
 - [Implement modularized workflow validation and update build scripts](https://github.com/thunder-id/thunderid/pull/3172)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/wso2-extensions/identity-inbound-auth-sts">wso2-extensions/identity-inbound-auth-sts</a></strong></summary>
+
+- [Fix WS-Federation Passive STS disable_applies_to_in_response suppressing SAML AudienceRestriction](https://github.com/wso2-extensions/identity-inbound-auth-sts/pull/206)
 
 </details>
 
