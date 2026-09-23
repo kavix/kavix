@@ -395,6 +395,7 @@
 <details>
 <summary><strong><a href="https://github.com/wso2/wso2-cli">wso2/wso2-cli</a></strong></summary>
 
+- [fix(install): serialize module activation with an advisory file lock](https://github.com/wso2/wso2-cli/pull/241)
 - [ci(release): verify live Pages deployment to catch deduplicated catalog releases (#209)](https://github.com/wso2/wso2-cli/pull/214)
 - [fix(catalog): check shell compatibility range during module selection](https://github.com/wso2/wso2-cli/pull/213)
 
