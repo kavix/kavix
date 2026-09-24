@@ -348,6 +348,23 @@
 </details>
 
 <details>
+<summary><strong><a href="https://github.com/SCSSA-UoK/.github">SCSSA-UoK/.github</a></strong></summary>
+
+- [Change greeting from 'Hi there' to 'Welcome'](https://github.com/SCSSA-UoK/.github/pull/2)
+- [Create README.md with introductory content](https://github.com/SCSSA-UoK/.github/pull/1)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/SCSSA-UoK/project-requests">SCSSA-UoK/project-requests</a></strong></summary>
+
+- [Update README.md](https://github.com/SCSSA-UoK/project-requests/pull/6)
+- [Request: e23-3yp-Smart-Campus](https://github.com/SCSSA-UoK/project-requests/pull/2)
+- [sasses](https://github.com/SCSSA-UoK/project-requests/pull/1)
+
+</details>
+
+<details>
 <summary><strong><a href="https://github.com/siddhi-io/siddhi-plugin-vscode">siddhi-io/siddhi-plugin-vscode</a></strong></summary>
 
 - [fix: remediate remaining trivy-reported npm vulnerabilities (resolves #41)](https://github.com/siddhi-io/siddhi-plugin-vscode/pull/68)
