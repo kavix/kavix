@@ -358,6 +358,9 @@
 <details>
 <summary><strong><a href="https://github.com/SCSSA-UoK/project-requests">SCSSA-UoK/project-requests</a></strong></summary>
 
+- [Update Pre-Commit Checklist header format](https://github.com/SCSSA-UoK/project-requests/pull/34)
+- [Fix formatting issues in AGENTS.md](https://github.com/SCSSA-UoK/project-requests/pull/33)
+- [Update AGENTS.md](https://github.com/SCSSA-UoK/project-requests/pull/31)
 - [Update README.md](https://github.com/SCSSA-UoK/project-requests/pull/6)
 - [Request: e23-3yp-Smart-Campus](https://github.com/SCSSA-UoK/project-requests/pull/2)
 - [sasses](https://github.com/SCSSA-UoK/project-requests/pull/1)
