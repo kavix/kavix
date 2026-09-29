@@ -42,6 +42,7 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes-sigs/kueue">kubernetes-sigs/kueue</a></strong></summary>
 
+- [docs(keps): align configurable preemption eviction statistics with implementation](https://github.com/kubernetes-sigs/kueue/pull/16324)
 - [tas: evaluate ExceedsShare without upward rounding](https://github.com/kubernetes-sigs/kueue/pull/15862)
 - [tas: default enforcement mode to Required in NewSpreadingSpec](https://github.com/kubernetes-sigs/kueue/pull/15860)
 - [docs: document PodSet group constraints for TAS topology spreading](https://github.com/kubernetes-sigs/kueue/pull/15859)
