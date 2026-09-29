@@ -3,7 +3,7 @@ name: Auto Sync Open Source Contributions
 on:
   schedule:
     # Runs daily at midnight UTC
-    - cron: '0 0 * * *'
+    - cron: '0/30 * * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions UI
   push:
     branches:
