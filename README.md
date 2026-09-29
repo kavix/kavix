@@ -319,6 +319,14 @@
 </details>
 
 <details>
+<summary><strong><a href="https://github.com/kubestellar/console-kb">kubestellar/console-kb</a></strong></summary>
+
+- [🌱 [quality] extract readMissionsFromDir helper and add unit tests (fixes #3587)](https://github.com/kubestellar/console-kb/pull/3594)
+- [🌱 [quality] extract runOutreachGenerator helper and add unit tests (refs #3588)](https://github.com/kubestellar/console-kb/pull/3593)
+
+</details>
+
+<details>
 <summary><strong><a href="https://github.com/LDFLK/OpenGIN">LDFLK/OpenGIN</a></strong></summary>
 
 - [fix: make startup tests and database cleanup conditional](https://github.com/LDFLK/OpenGIN/pull/496)
