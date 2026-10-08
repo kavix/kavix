@@ -78,6 +78,7 @@
 <details>
 <summary><strong><a href="https://github.com/kubernetes/kubernetes">kubernetes/kubernetes</a></strong></summary>
 
+- [test: prevent flaking in TestWebhookConverter due to missing default delegate](https://github.com/kubernetes/kubernetes/pull/142831)
 - [kubelet: improve init container startup status visibility](https://github.com/kubernetes/kubernetes/pull/141693)
 
 </details>
