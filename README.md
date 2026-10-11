@@ -111,6 +111,7 @@
 <details>
 <summary><strong><a href="https://github.com/openchoreo/backstage-plugins">openchoreo/backstage-plugins</a></strong></summary>
 
+- [fix(workflows-ui): surface pre-Argo failure status and conditions in UI](https://github.com/openchoreo/backstage-plugins/pull/852)
 - [fix(permission-policy): preserve scoped capability paths for catalog entity visibility](https://github.com/openchoreo/backstage-plugins/pull/767)
 - [feat: add SonarQube integration to entity pages](https://github.com/openchoreo/backstage-plugins/pull/662)
 - [feat(observability): make project-level log component names clickable](https://github.com/openchoreo/backstage-plugins/pull/643)
@@ -120,6 +121,7 @@
 <details>
 <summary><strong><a href="https://github.com/openchoreo/openchoreo">openchoreo/openchoreo</a></strong></summary>
 
+- [fix(api): surface pre-Argo failure status in API response](https://github.com/openchoreo/openchoreo/pull/4923)
 - [feat(api): register portal-assistant:invoke and add chart roles validation test (#4683)](https://github.com/openchoreo/openchoreo/pull/4722)
 - [fix: exclude agent connections from selection after GOAWAY is sent](https://github.com/openchoreo/openchoreo/pull/4594)
 - [feat(api): support per-trigger cronjob arguments](https://github.com/openchoreo/openchoreo/pull/4577)
