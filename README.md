@@ -312,13 +312,6 @@
 
 </details>
 
-<details>
-<summary><strong><a href="https://github.com/Maleesha101/DEAD-AIR">Maleesha101/DEAD-AIR</a></strong></summary>
-
-- [feat: deterministic artifact generation and integrity verification framework](https://github.com/Maleesha101/DEAD-AIR/pull/14)
-
-</details>
-
 #### Other Open Source Contributions
 
 <details>
