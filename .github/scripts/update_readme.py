@@ -77,7 +77,8 @@ CATEGORY_ORDER = [
 # Repositories / authors to exclude from OSS showcase
 EXCLUDED_OWNERS = {GITHUB_USER.lower(), ARCHIVED_USER.lower(), "kodegas"}
 EXCLUDED_REPOS = {
-    "maleesha101/arenaxx",
+    "maleesha101/arenaxx",    
+    "maleesha101/dead-air",
     "blackbossx/elektrum-backend",
     "kavishkadinajara/fileflow",
 }
