@@ -312,13 +312,6 @@
 
 </details>
 
-<details>
-<summary><strong><a href="https://github.com/medusa-ecsc/DEAD-AIR">medusa-ecsc/DEAD-AIR</a></strong></summary>
-
-- [feat: deterministic artifact generation and integrity verification framework](https://github.com/medusa-ecsc/DEAD-AIR/pull/14)
-
-</details>
-
 #### Other Open Source Contributions
 
 <details>
@@ -369,6 +362,7 @@
 <details>
 <summary><strong><a href="https://github.com/SCSSA-UoK/.github">SCSSA-UoK/.github</a></strong></summary>
 
+- [Update README.md](https://github.com/SCSSA-UoK/.github/pull/3)
 - [Change greeting from 'Hi there' to 'Welcome'](https://github.com/SCSSA-UoK/.github/pull/2)
 - [Create README.md with introductory content](https://github.com/SCSSA-UoK/.github/pull/1)
 
