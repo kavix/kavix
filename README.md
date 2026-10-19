@@ -353,6 +353,22 @@
 </details>
 
 <details>
+<summary><strong><a href="https://github.com/medusa-ecsc/Medusa-2.0">medusa-ecsc/Medusa-2.0</a></strong></summary>
+
+- [fix: Fix Docker and workflow issues for successful deployment](https://github.com/medusa-ecsc/Medusa-2.0/pull/26)
+- [feat: Add backend deployment setup with Google Cloud and GHCR](https://github.com/medusa-ecsc/Medusa-2.0/pull/25)
+- [New brach](https://github.com/medusa-ecsc/Medusa-2.0/pull/9)
+- [gh act](https://github.com/medusa-ecsc/Medusa-2.0/pull/8)
+- [Reg moved](https://github.com/medusa-ecsc/Medusa-2.0/pull/7)
+- [Reg moved](https://github.com/medusa-ecsc/Medusa-2.0/pull/6)
+- [ci cd](https://github.com/medusa-ecsc/Medusa-2.0/pull/5)
+- [gh ACT](https://github.com/medusa-ecsc/Medusa-2.0/pull/4)
+- [static texts updated](https://github.com/medusa-ecsc/Medusa-2.0/pull/3)
+- [/register moved](https://github.com/medusa-ecsc/Medusa-2.0/pull/2)
+
+</details>
+
+<details>
 <summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
 - [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
