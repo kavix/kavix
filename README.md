@@ -84,13 +84,6 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/ray-project/kuberay">ray-project/kuberay</a></strong></summary>
-
-- [ray-operator: remove ineffective clearing of WorkersToDelete](https://github.com/ray-project/kuberay/pull/5209)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/wso2/kubernetes-common">wso2/kubernetes-common</a></strong></summary>
 
 - [[Doc] Update Kubernetes Membership Scheme installation steps for EI 6.0.0+](https://github.com/wso2/kubernetes-common/pull/31)
@@ -318,6 +311,13 @@
 <summary><strong><a href="https://github.com/clencyc/LiveEdit">clencyc/LiveEdit</a></strong></summary>
 
 - [docs: add contributing guidelines and github templates](https://github.com/clencyc/LiveEdit/pull/20)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/kuberay-project/kuberay">kuberay-project/kuberay</a></strong></summary>
+
+- [ray-operator: remove ineffective clearing of WorkersToDelete](https://github.com/kuberay-project/kuberay/pull/5209)
 
 </details>
 
