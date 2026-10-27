@@ -234,6 +234,7 @@
 <details>
 <summary><strong><a href="https://github.com/apple/container">apple/container</a></strong></summary>
 
+- [Add --filter label support to container ls (#2403)](https://github.com/apple/container/pull/2435)
 - [perf(machine): fetch machines and default status concurrently in machine list](https://github.com/apple/container/pull/2214)
 - [Add `cp` support to `container machine`](https://github.com/apple/container/pull/2211)
 
