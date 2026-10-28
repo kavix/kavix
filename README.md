@@ -266,21 +266,6 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/facebook/pyrefly">facebook/pyrefly</a></strong></summary>
-
-- [Fix false positive bad-override when overriding methods using bounded TypeVars](https://github.com/facebook/pyrefly/pull/4869)
-- [Report redundant-condition for class instances without __bool__ or __len__](https://github.com/facebook/pyrefly/pull/4673)
-- [Consider __all__.remove when determining explicit exports](https://github.com/facebook/pyrefly/pull/4638)
-- [Fix stack overflow during subscript inference on recursive type aliases](https://github.com/facebook/pyrefly/pull/4635)
-- [Guard against recursive protocol member checking in __getattr__ self validation](https://github.com/facebook/pyrefly/pull/4634)
-- [Fix stack overflow from recursive Self __call__ resolution](https://github.com/facebook/pyrefly/pull/4591)
-- [Fix deprecation warnings for re-exported symbols](https://github.com/facebook/pyrefly/pull/4577)
-- [Support semantic tokens for format specifiers in logging calls](https://github.com/facebook/pyrefly/pull/4003)
-- [Support multiple glob patterns in sub-config matches](https://github.com/facebook/pyrefly/pull/3516)
-
-</details>
-
-<details>
 <summary><strong><a href="https://github.com/modular/modular">modular/modular</a></strong></summary>
 
 - [[Docs] Add license specification and README for max Mojo package (#6944)](https://github.com/modular/modular/pull/6950)
@@ -366,6 +351,21 @@
 - [gh ACT](https://github.com/medusa-ecsc/Medusa-2.0/pull/4)
 - [static texts updated](https://github.com/medusa-ecsc/Medusa-2.0/pull/3)
 - [/register moved](https://github.com/medusa-ecsc/Medusa-2.0/pull/2)
+
+</details>
+
+<details>
+<summary><strong><a href="https://github.com/meta/pyrefly">meta/pyrefly</a></strong></summary>
+
+- [Fix false positive bad-override when overriding methods using bounded TypeVars](https://github.com/meta/pyrefly/pull/4869)
+- [Report redundant-condition for class instances without __bool__ or __len__](https://github.com/meta/pyrefly/pull/4673)
+- [Consider __all__.remove when determining explicit exports](https://github.com/meta/pyrefly/pull/4638)
+- [Fix stack overflow during subscript inference on recursive type aliases](https://github.com/meta/pyrefly/pull/4635)
+- [Guard against recursive protocol member checking in __getattr__ self validation](https://github.com/meta/pyrefly/pull/4634)
+- [Fix stack overflow from recursive Self __call__ resolution](https://github.com/meta/pyrefly/pull/4591)
+- [Fix deprecation warnings for re-exported symbols](https://github.com/meta/pyrefly/pull/4577)
+- [Support semantic tokens for format specifiers in logging calls](https://github.com/meta/pyrefly/pull/4003)
+- [Support multiple glob patterns in sub-config matches](https://github.com/meta/pyrefly/pull/3516)
 
 </details>
 
