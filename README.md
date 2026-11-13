@@ -355,24 +355,24 @@
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/meta/pyrefly">meta/pyrefly</a></strong></summary>
+<summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
 
-- [Fix false positive bad-override when overriding methods using bounded TypeVars](https://github.com/meta/pyrefly/pull/4869)
-- [Report redundant-condition for class instances without __bool__ or __len__](https://github.com/meta/pyrefly/pull/4673)
-- [Consider __all__.remove when determining explicit exports](https://github.com/meta/pyrefly/pull/4638)
-- [Fix stack overflow during subscript inference on recursive type aliases](https://github.com/meta/pyrefly/pull/4635)
-- [Guard against recursive protocol member checking in __getattr__ self validation](https://github.com/meta/pyrefly/pull/4634)
-- [Fix stack overflow from recursive Self __call__ resolution](https://github.com/meta/pyrefly/pull/4591)
-- [Fix deprecation warnings for re-exported symbols](https://github.com/meta/pyrefly/pull/4577)
-- [Support semantic tokens for format specifiers in logging calls](https://github.com/meta/pyrefly/pull/4003)
-- [Support multiple glob patterns in sub-config matches](https://github.com/meta/pyrefly/pull/3516)
+- [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
 
 </details>
 
 <details>
-<summary><strong><a href="https://github.com/niro1-1/notebook-utils">niro1-1/notebook-utils</a></strong></summary>
+<summary><strong><a href="https://github.com/pyrefly-org/pyrefly">pyrefly-org/pyrefly</a></strong></summary>
 
-- [feat: implement rate limiting and unit tests for failure scenarios (#32)](https://github.com/niro1-1/notebook-utils/pull/67)
+- [Fix false positive bad-override when overriding methods using bounded TypeVars](https://github.com/pyrefly-org/pyrefly/pull/4869)
+- [Report redundant-condition for class instances without __bool__ or __len__](https://github.com/pyrefly-org/pyrefly/pull/4673)
+- [Consider __all__.remove when determining explicit exports](https://github.com/pyrefly-org/pyrefly/pull/4638)
+- [Fix stack overflow during subscript inference on recursive type aliases](https://github.com/pyrefly-org/pyrefly/pull/4635)
+- [Guard against recursive protocol member checking in __getattr__ self validation](https://github.com/pyrefly-org/pyrefly/pull/4634)
+- [Fix stack overflow from recursive Self __call__ resolution](https://github.com/pyrefly-org/pyrefly/pull/4591)
+- [Fix deprecation warnings for re-exported symbols](https://github.com/pyrefly-org/pyrefly/pull/4577)
+- [Support semantic tokens for format specifiers in logging calls](https://github.com/pyrefly-org/pyrefly/pull/4003)
+- [Support multiple glob patterns in sub-config matches](https://github.com/pyrefly-org/pyrefly/pull/3516)
 
 </details>
 
